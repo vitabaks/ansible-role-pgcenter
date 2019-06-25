@@ -1,6 +1,6 @@
 # ansible-role-pgcenter
 
-[![Ansible Galaxy](https://img.shields.io/badge/galaxy-vitabaks.ansible__role__pgcenter-blue.svg)](https://galaxy.ansible.com/vitabaks/ansible_role_pgcenter/)
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-vitabaks.pgcenter-blue.svg)](https://galaxy.ansible.com/vitabaks/pgcenter/)
 
 Install [pgCenter](https://github.com/lesovsky/pgcenter) (command-line admin tool for observing and troubleshooting PostgreSQL) with Ansible.
 
