@@ -16,5 +16,7 @@ galaxy_info:
         - all
   galaxy_tags:
     - pgcenter
+    - postgresql
+    - postgres
 
 dependencies: []
