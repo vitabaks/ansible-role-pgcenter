@@ -1,0 +1,29 @@
+---
+
+- name: download and extract "pgcenter_{{ pgcenter_version }}_Linux_x86_64.tar.gz" into /tmp
+  unarchive:
+    src: "https://github.com/lesovsky/pgcenter/releases/download/v{{ pgcenter_version }}/pgcenter_{{ pgcenter_version }}_Linux_x86_64.tar.gz"
+    dest: /tmp/
+    remote_src: yes
+    validate_certs: no
+  when: (proxy_env is not defined) or (proxy_env | length < 1)
+  tags: [ pgcenter_get, pgcenter ]
+
+- name: download and extract "pgcenter_{{ pgcenter_version }}_Linux_x86_64.tar.gz" into /tmp (behind a proxy)
+  unarchive:
+    src: "https://github.com/lesovsky/pgcenter/releases/download/v{{ pgcenter_version }}/pgcenter_{{ pgcenter_version }}_Linux_x86_64.tar.gz"
+    dest: /tmp/
+    remote_src: yes
+    validate_certs: no
+  environment:
+    "{{ proxy_env }}"
+  when: proxy_env | length > 0
+  tags: [ pgcenter_get, pgcenter ]
+
+- name: copy "pgcenter" binary file to "/usr/local/bin/"
+  copy:
+    src: /tmp/pgcenter
+    dest: /usr/local/bin/
+    mode: u+x,g+x,o+x
+    remote_src: yes
+  tags: [ pgcenter_install, pgcenter ]

@@ -1,0 +1,17 @@
+---
+# defaults file for ansible-role-pgcenter
+
+pgcenter_version: "0.6.2"
+
+# Proxy variables
+proxy_env: []
+#  http_proxy: http://10.128.64.9:3128
+#  https_proxy: http://10.128.64.9:3128
+
+
+# Alias (optional)
+set_pgcenter_alias: 'false'  # or 'true'
+bash_alias: "alias pgcenter='pgcenter top -h /var/run/postgresql/ -U postgres -d postgres'"
+bash_alias_for: "postgres"
+bash_alias_path: "~{{ bash_alias_for }}/.bashrc"
+
