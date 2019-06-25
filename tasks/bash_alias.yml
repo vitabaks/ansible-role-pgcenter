@@ -6,7 +6,7 @@
     shell: /bin/bash
     state: present
   tags: [ pgcenter_alias, pgcenter ]
-  
+
 - name: add "{{ bash_alias }}" to "{{ bash_alias_path }}"
   lineinfile:
     path: "{{ bash_alias_path }}"
