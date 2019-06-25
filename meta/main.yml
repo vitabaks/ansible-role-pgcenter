@@ -1,6 +1,7 @@
 galaxy_info:
-  author: Vitaliy Kukharik (vitabaks@gmail.com)
+  role_name: pgcenter
   description: Install pgcenter (command-line admin tool for observing and troubleshooting PostgreSQL)
+  author: Vitaliy Kukharik (vitabaks@gmail.com)
   license: MIT
   min_ansible_version: 2.4
 
