@@ -1,7 +1,7 @@
 ---
 # defaults file for ansible-role-pgcenter
 
-pgcenter_version: "0.6.3"
+pgcenter_version: "0.6.4"
 
 # Proxy variables
 proxy_env: []
