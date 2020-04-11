@@ -7,7 +7,6 @@
     remote_src: yes
     validate_certs: no
   environment: '{{ proxy_env | default({}) }}'
-  when: (proxy_env is not defined) or (proxy_env | length < 1)
   tags: [ pgcenter_get, pgcenter ]
 
 - name: copy "pgcenter" binary file to "/usr/local/bin/"
