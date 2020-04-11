@@ -6,6 +6,6 @@
   tags: pgcenter
 
 - import_tasks: bash_alias.yml
-  when: set_pgcenter_alias != "false"
+  when: set_pgcenter_alias | bool
   ignore_errors: yes
   tags: pgcenter_alias
