@@ -15,7 +15,7 @@ pgCenter is written on Go language and distributed as a single precompiled binar
 ## Role Variables
 `pgcenter_version` - version of pgcenter package for installing. Default: `"0.6.4"`
 
-`proxy_env` - use proxy server to download pgcenter packages (if required). Default: `[]`
+`proxy_env` - use proxy server to download pgcenter packages (if required).
 ###### example:
 ```
 proxy_env:
@@ -24,7 +24,7 @@ proxy_env:
 ```
 
 ###### optional variable:
-`set_pgcenter_alias` - specify the alias for pgcenter ('false' or 'true'). Default: `'false'`
+`set_pgcenter_alias` - specify the alias for pgcenter. Default: `false`
 ###### example:
 ```
 alias pgcenter='pgcenter top -h /var/run/postgresql/ -U postgres -d postgres'
