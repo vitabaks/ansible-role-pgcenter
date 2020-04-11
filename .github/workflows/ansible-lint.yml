@@ -1,0 +1,25 @@
+name: Ansible-lint
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Git clone repo ansible-role-pgcenter
+      uses: actions/checkout@v2
+
+    - name: Lint Ansible Playbook "ansible-role-pgcenter". Commit ${{ github.sha }}
+      uses: ansible/ansible-lint-action@master
+      with:
+        targets: "tasks/main.yml"
+        override-deps: |
+          ansible==2.9
+          ansible-lint==4.2.0
+        args: ""
