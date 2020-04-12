@@ -2,7 +2,7 @@
 
 - name: check user "{{ bash_alias_for }}" | create user if not already exist
   user:
-    name: "{{ bash_alias_for }}"
+  name: "{{ bash_alias_for }}"
     shell: /bin/bash
     state: present
   tags: [ pgcenter_alias, pgcenter ]

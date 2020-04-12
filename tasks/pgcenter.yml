@@ -6,7 +6,7 @@
     dest: /tmp/
     remote_src: yes
     validate_certs: no
-  environment: '{{ proxy_env | default({}) }}'
+  environment: '{{ proxy_env | default({}) }}
   tags: [ pgcenter_get, pgcenter ]
 
 - name: copy "pgcenter" binary file to "/usr/local/bin/"
