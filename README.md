@@ -13,7 +13,7 @@ pgCenter is written on Go language and distributed as a single precompiled binar
 > pgCenter has been developed to work on Linux and hasn't been tested on other OS (operating systems), therefore, it is not recommended to use it on alternative systems because it will not operate properly.
 
 ## Role Variables
-`pgcenter_version` - version of pgcenter package for installing. Default: `"0.6.4"`
+`pgcenter_version` - version of pgcenter package for installing. Default: `"0.6.5"`
 
 `proxy_env` - use proxy server to download pgcenter packages (if required).
 ###### example:
