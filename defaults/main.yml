@@ -6,12 +6,10 @@ proxy_env: {}
 
 # -------------------------------------------
 
-
-pgcenter_version: "0.6.6"
-
+pgcenter_version: "0.7.0"
 
 # Alias (optional)
 set_pgcenter_alias: false  # or true
-bash_alias: "alias pgcenter='pgcenter top -h /var/run/postgresql/ -U postgres -d postgres'"
+bash_alias: "alias pgcenter_top='pgcenter top -h /var/run/postgresql/ -U postgres -d postgres'"
 bash_alias_for: "postgres"
 bash_alias_path: "~{{ bash_alias_for }}/.bashrc"
