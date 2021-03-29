@@ -6,7 +6,7 @@ proxy_env: {}
 
 # -------------------------------------------
 
-pgcenter_version: "0.7.0"
+pgcenter_version: "0.8.0"
 
 # Alias (optional)
 set_pgcenter_alias: false  # or true
