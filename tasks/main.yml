@@ -2,10 +2,8 @@
 # tasks file for ansible-role-pgcenter
 
 - ansible.builtin.import_tasks: pgcenter.yml
-  ignore_errors: true
   tags: pgcenter
 
 - ansible.builtin.import_tasks: bash_alias.yml
   when: set_pgcenter_alias | bool
-  ignore_errors: true
   tags: pgcenter_alias
