@@ -1,19 +1,19 @@
 ---
 
-- name: check user "{{ bash_alias_for }}" | create user if not already exist
-  user:
+- name: Create user if not already exists - {{ bash_alias_for }}
+  ansible.builtin.user:
     name: "{{ bash_alias_for }}"
     shell: /bin/bash
     state: present
-  tags: [ pgcenter_alias, pgcenter ]
+  tags: [pgcenter_alias, pgcenter]
 
-- name: add "{{ bash_alias }}" to "{{ bash_alias_path }}"
-  lineinfile:
+- name: Add bash alias to profile - {{ bash_alias_path }}
+  ansible.builtin.lineinfile:
     path: "{{ bash_alias_path }}"
-    create: yes
+    create: true
     owner: "{{ bash_alias_for }}"
     group: "{{ bash_alias_for }}"
-    mode: 0644
+    mode: "0644"
     line: "{{ bash_alias }}"
     regexp: "^{{ bash_alias }}"
-  tags: [ pgcenter_alias, pgcenter ]
+  tags: [pgcenter_alias, pgcenter]
