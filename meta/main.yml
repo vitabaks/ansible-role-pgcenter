@@ -1,4 +1,5 @@
 galaxy_info:
+  namespace: vitabaks
   role_name: pgcenter
   description: Install pgcenter (command-line admin tool for observing and troubleshooting PostgreSQL)
   author: Vitaliy Kukharik (vitabaks@gmail.com)
