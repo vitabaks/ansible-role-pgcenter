@@ -1,6 +1,7 @@
 # ansible-role-pgcenter
 
-[![Ansible Galaxy](https://img.shields.io/badge/galaxy-vitabaks.pgcenter-blue.svg)](https://galaxy.ansible.com/vitabaks/pgcenter/) [![quality](https://img.shields.io/ansible/quality/29220)](https://galaxy.ansible.com/vitabaks/pgcenter) [<img src="https://github.com/vitabaks/ansible-role-pgcenter/workflows/Ansible-lint/badge.svg?branch=master">](https://github.com/vitabaks/ansible-role-pgcenter/actions?query=workflow%3AAnsible-lint)
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-vitabaks.pgcenter-blue.svg)](https://galaxy.ansible.com/ui/standalone/roles/vitabaks/pgcenter/)
+[<img src="https://github.com/vitabaks/ansible-role-pgcenter/actions/workflows/ansible-lint.yml/badge.svg?branch=master">](https://github.com/vitabaks/ansible-role-pgcenter/actions/workflows/ansible-lint.yml)
 
 Install [pgCenter](https://github.com/lesovsky/pgcenter) (command-line admin tool for observing and troubleshooting PostgreSQL) with Ansible.
 
